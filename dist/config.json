@@ -1,0 +1,18 @@
+{
+  "HOST": {
+    "value": "www.repoflow.com",
+    "type": null
+  },
+  "SERVICE_PORT": {
+    "value": "4000",
+    "type": "port"
+  },
+  "SERVICE_PATH_GRAPH": {
+    "value": "/graphql",
+    "type": "path"
+  },
+  "SERVICE_PATH_EVENTS": {
+    "value": "/events",
+    "type": "path"
+  }
+}

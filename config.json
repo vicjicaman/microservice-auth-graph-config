@@ -1,0 +1,27 @@
+{
+  "namespace": "github.com:vicjicaman/microservices.git",
+  "dependencies": [{
+    "moduleid": "microservice-config@master",
+    "version": "file:./../microservice-config"
+  }],
+  "config": [{
+      "name": "HOST",
+      "value": "${HOST@microservice-config}"
+    },
+    {
+      "name": "SERVICE_PORT",
+      "value": "4000",
+      "type": "port"
+    },
+    {
+      "name": "SERVICE_PATH_GRAPH",
+      "value": "/graphql",
+      "type": "path"
+    },
+    {
+      "name": "SERVICE_PATH_EVENTS",
+      "value": "/events",
+      "type": "path"
+    }
+  ]
+}
