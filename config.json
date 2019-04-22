@@ -1,10 +1,15 @@
 {
   "namespace": "github.com:vicjicaman/microservices.git",
-  "dependencies": [{
-    "moduleid": "microservice-config@master",
-    "version": "file:./../microservice-config"
-  }],
-  "config": [{
+  "dependencies": {
+    "microservice-config": {
+      "version": "file:./../microservice-config"
+    },
+    "microservice-auth-config": {
+      "version": "file:./../microservice-auth-config"
+    }
+  },
+  "config": [
+    {
       "name": "HOST",
       "value": "${HOST@microservice-config}"
     },
@@ -14,13 +19,23 @@
       "type": "port"
     },
     {
-      "name": "SERVICE_PATH_GRAPH",
+      "name": "SERVICE_PATH_GRAPHQL",
       "value": "/graphql",
       "type": "path"
     },
     {
       "name": "SERVICE_PATH_EVENTS",
       "value": "/events",
+      "type": "path"
+    },
+    {
+      "name": "SERVICE_URL_PATH_GRAPHQL",
+      "value": "${SERVICE_PATH@microservice-auth-config}/backend${SERVICE_PATH_GRAPHQL}",
+      "type": "path"
+    },
+    {
+      "name": "SERVICE_URL_PATH_EVENTS",
+      "value": "${SERVICE_PATH@microservice-auth-config}/backend${SERVICE_PATH_EVENTS}",
       "type": "path"
     }
   ]

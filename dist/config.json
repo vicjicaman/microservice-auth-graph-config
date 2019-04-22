@@ -7,12 +7,20 @@
     "value": "4000",
     "type": "port"
   },
-  "SERVICE_PATH_GRAPH": {
+  "SERVICE_PATH_GRAPHQL": {
     "value": "/graphql",
     "type": "path"
   },
   "SERVICE_PATH_EVENTS": {
     "value": "/events",
+    "type": "path"
+  },
+  "SERVICE_URL_PATH_GRAPHQL": {
+    "value": "/auth/backend/graphql",
+    "type": "path"
+  },
+  "SERVICE_URL_PATH_EVENTS": {
+    "value": "/auth/backend/events",
     "type": "path"
   }
 }
