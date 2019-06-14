@@ -2,11 +2,11 @@
   "dependencies": {
     "microservice-config": {
       "url": "github.com:vicjicaman/microservice-config.git",
-      "version": "1.70.6-auth-init-prod"
+      "version": "1.70.0-master"
     },
     "microservice-auth-config": {
       "url": "github.com:vicjicaman/microservice-auth-config.git",
-      "version": "1.70.6-auth-init-prod"
+      "version": "1.70.0-master"
     }
   },
   "config": [
